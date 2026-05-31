@@ -14,11 +14,10 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: undefined,
+			fallback: '404.html',
 			precompress: false,
 			strict: true
-		}),
-		outDir: '.svelte-kit/cloudflare'
+		})
 	},
 	preprocess: [mdsvex({ extensions: ['.svx', '.md'] })],
 	extensions: ['.svelte', '.svx', '.md']
